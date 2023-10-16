@@ -1,0 +1,22 @@
+.Header-create-note{
+  border-bottom: 1px solid white;
+}
+.Header-create-note .header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.body-create-note{
+  height: calc(100vh - 66px);
+}
+
+.body-create-note input:focus{
+ border: none;
+ outline: none;
+}
+.body-create-note textarea{
+  border: none;
+ outline: none;
+}

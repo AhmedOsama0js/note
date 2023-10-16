@@ -1,0 +1,30 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+
+section .container.body {
+  padding-top: 20px;
+  height: calc(100vh - 73px);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+  gap: 20px;
+
+  overflow: scroll;
+}
+
+.container.body .card{
+  background-color: rgb(228, 241, 154);
+}
+
+
+@media(max-width:997px){
+  section .container.body {
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+}
+@media(max-width:786px){
+  section .container.body {
+grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+}
