@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 
 const Header = ({ notes, setFilter }) => {
   const [text, setText] = useState("");
-  const [, setFilteredNotes] = useState(notes);
+  const [filteredNotes, setFilteredNotes] = useState(notes);
 
   const handleSearch = () => {
     const lowerSearchText = text.toLowerCase();

@@ -1,4 +1,4 @@
-import { Routes, Route,HashRouter } from "react-router-dom";
+import { Routes, Route,BrowserRouter } from "react-router-dom";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,7 +18,7 @@ function App() {
   },[notes])
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Note notes={notes} />} />
           <Route
@@ -30,7 +30,7 @@ function App() {
             element={<EditNote notes={notes} setNotes={setNotes} />}
           />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
