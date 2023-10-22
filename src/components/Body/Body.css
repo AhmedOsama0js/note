@@ -4,7 +4,7 @@
 
 section .container.body {
   padding-top: 20px;
-  height: calc(100vh - 73px);
+  height: calc(100vh - 72px);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 

@@ -29,7 +29,7 @@ const navigate = useNavigate();
             <button
               type="button"
               title="back"
-              className="btn btn-secondary fs-3 rounded-4 border-0"
+              className="btn btn-secondary fs-3 rounded-4 border-0 d-flex p-3"
             >
               <IoIosArrowBack />
             </button>
@@ -40,7 +40,7 @@ const navigate = useNavigate();
             }}
             type="button"
             title="save"
-            className="btn btn-success fs-3 rounded-4 border-0"
+            className="btn btn-success fs-3 rounded-4 border-0 d-flex p-2"
           >
             save
           </button>

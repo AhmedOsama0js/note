@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 
 const Header = ({ notes, setFilter }) => {
   const [text, setText] = useState("");
-  const [filteredNotes, setFilteredNotes] = useState(notes);
+  const [, setFilteredNotes] = useState(notes);
 
   const handleSearch = () => {
     const lowerSearchText = text.toLowerCase();
@@ -15,11 +15,9 @@ const Header = ({ notes, setFilter }) => {
     );
     setFilteredNotes(filtered);
     setFilter(filtered.length >= 1 ? filtered : notes);
-    
   };
 
-  useEffect(() => {
-  }, [text]);
+  useEffect(() => {}, [text]);
 
   return (
     <header>
@@ -29,7 +27,7 @@ const Header = ({ notes, setFilter }) => {
           <form className="d-flex" role="search">
             <input
               value={text}
-              onChange={(e) => ( setText(e.target.value))}
+              onChange={(e) => setText(e.target.value)}
               className="form-control me-2"
               type="search"
               placeholder="Search"

@@ -1,4 +1,4 @@
-import { Routes, Route,BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,12 +10,13 @@ import EditNote from "./pages/EditNote/EditNote";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [notes, setNotes] = useState(JSON.parse(localStorage.getItem("notes"))||[]);
-
+  const [notes, setNotes] = useState(
+    JSON.parse(localStorage.getItem("notes")) || []
+  );
 
   useEffect(() => {
-    localStorage.setItem('notes' , JSON.stringify(notes))
-  },[notes])
+    localStorage.setItem("notes", JSON.stringify(notes));
+  }, [notes]);
   return (
     <>
       <BrowserRouter>
@@ -35,5 +36,4 @@ function App() {
   );
 }
 
-export default App
-
+export default App;

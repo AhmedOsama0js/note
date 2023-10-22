@@ -12,7 +12,7 @@ const Footer = () => {
           <button
             title="Add"
             type="button"
-            className="btn btn-secondary fs-3 rounded-4"
+            className="btn btn-secondary fs-3 rounded-4 d-flex p-3"
           >
             <BiPlus />
           </button>

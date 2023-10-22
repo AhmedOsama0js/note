@@ -47,7 +47,7 @@ const EditNote = ({ notes, setNotes }) => {
             <button
               type="button"
               title="back"
-              className="btn btn-secondary fs-3 rounded-4 border-0"
+              className="btn btn-secondary fs-3 rounded-4 border-0 d-flex p-3"
             >
               <IoIosArrowBack />
             </button>
@@ -56,7 +56,7 @@ const EditNote = ({ notes, setNotes }) => {
             onClick={handleDelete}
             type="button"
             title="back"
-            className="btn btn-danger fs-3 rounded-4 border-0"
+            className="btn btn-danger fs-3 rounded-4 border-0 d-flex p-3"
           >
             <AiOutlineDelete />
           </button>
@@ -65,7 +65,7 @@ const EditNote = ({ notes, setNotes }) => {
             onClick={handleData}
             type="button"
             title="back"
-            className="btn btn-success fs-3 rounded-4 border-0"
+            className="btn btn-success fs-3 rounded-4 border-0 d-flex p-2"
           >
             save
           </button>
