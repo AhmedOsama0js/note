@@ -21,7 +21,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Note notes={notes} />} />
+          <Route path="/note" element={<Note notes={notes} />} />
           <Route
             path="/create-note"
             element={<CreateNote setNotes={setNotes} />}

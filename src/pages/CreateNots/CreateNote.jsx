@@ -18,14 +18,14 @@ const navigate = useNavigate();
       const note = { id: uuid(), title, details, date };
       setNotes(prevNotes => [note,...prevNotes])
     }
-    navigate("/");
+    navigate("/note");
   };
 
   return (
     <>
       <div className="Header-create-note  bg-dark ">
         <div className="container header py-2">
-          <Link to="/">
+          <Link to="/note">
             <button
               type="button"
               title="back"

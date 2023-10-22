@@ -30,20 +30,20 @@ const EditNote = ({ notes, setNotes }) => {
       })
       setNotes(newNotes);
     }
-    navigate("/")
+    navigate("/note")
   }
 
   const handleDelete = () => {
     const newNotes = notes.filter(item => item.id !== id)
     setNotes(newNotes);
-    navigate("/")
+    navigate("/note")
   }
 
   return (
     <div>
       <div className="Header-create-note  bg-dark ">
         <div className="container header py-2">
-          <Link to="/">
+          <Link to="/note">
             <button
               type="button"
               title="back"
