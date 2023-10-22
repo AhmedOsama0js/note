@@ -17,7 +17,9 @@ const Header = ({ notes, setFilter }) => {
     setFilter(filtered.length >= 1 ? filtered : notes);
   };
 
-  useEffect(() => {}, [text]);
+  useEffect(() => {
+    handleSearch();
+  }, [text]);
 
   return (
     <header>
