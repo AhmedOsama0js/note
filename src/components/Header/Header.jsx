@@ -17,6 +17,12 @@ const Header = ({ notes, setFilter }) => {
     setFilter(filtered.length >= 1 ? filtered : notes);
   };
 
+    const handleSubmit = (e) => {
+      e.preventDefault(); 
+
+      handleSearch(); 
+  };
+  
   useEffect(() => {
     handleSearch();
   }, [text]);
@@ -26,7 +32,7 @@ const Header = ({ notes, setFilter }) => {
       <nav className="navbar bg-body-tertiary" data-bs-theme="dark">
         <div className="container header">
           <h2 className="navbar-brand fs-2">My Notes</h2>
-          <form className="d-flex" role="search">
+          <form onSubmit={handleSubmit} className="d-flex" role="search">
             <input
               value={text}
               onChange={(e) => setText(e.target.value)}
